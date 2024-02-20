@@ -15,13 +15,5 @@ leftBtn.addEventListener("click", () => {
 
 /*===============================*/
 
-const btnCart = document.querySelector(".container-compras");
-const containerCartProducts = document.querySelector(".container-cart-products");
 
-btnCart.addEventListener("click", () => {
-    containerCartProducts.classList.toggle
-    ("hidden-cart")
-});
-
-/*===============================*/
 
