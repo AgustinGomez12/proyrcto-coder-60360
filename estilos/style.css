@@ -294,7 +294,6 @@ main {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  justify-content: center;
   padding: 5%;
   gap: 2rem;
   padding-bottom: 100px;
@@ -597,7 +596,13 @@ gap: 3%;
   border-top: solid 1px;
 }
 
+.bi-telephone-fill {
+  width: 1rem;
+}
 
+.bi-envelope-at-fill {
+  width: 1rem;
+}
 
 /*footer final*/
 
@@ -607,6 +612,9 @@ gap: 3%;
 @media (min-width:582px) {
    
   /*header*/
+
+
+
   .ul-links {
      overflow: visible;
      width: 100%;
@@ -621,10 +629,16 @@ gap: 3%;
     a {
       font-size: 23px;
     }
+
+
       
   /*header final*/
     
    /*footer*/
+
+   .header h1 {
+      padding-right: 4%;
+   }
 
    .footer-guia {
     display: flex;
@@ -647,6 +661,93 @@ gap: 3%;
     display: flex;
   }
 
+  .titulo-footer {
+    font-size: 2rem;
+  }
 
+  .ul-footer {
+    gap: 8%;
+  }
+
+  .ul-footer a {
+    font-size: 1.6rem;
+  }
+
+  .bi-telephone-fill {
+    width: 40px;
+    padding-right: 2%;
+  }
+
+  .content-tel h5{
+    font-size: 1.5rem;
+    padding-top: 1%;
+  }
+
+.content-mail h5 {
+    font-size: 1.5rem;
+    padding-top: 6%;
+  }
+
+  .bi-envelope-at-fill {
+    width: 2rem;
+    padding-top: 5%;
+
+  }
  
+
+  .btn-outline-danger {
+    width: 15rem;
+    background-color: rgba(0, 0, 255, 0.104);
+
+  }
+
+
+
+
+   /*Modificaciones lobiliarios*/
+     
+   .card-title-mobiliario {
+    font-size: 2rem;
+   }
+
+   .card-text {
+    font-size: 2rem;
+   }
+
+   .btn-primary {
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.5rem;
+   }
+
+   /*Modificaciones lobiliarios final*/
+
+   /*Modificaciones Crear cuenta*/
+      
+   .container-text-area {
+    width: 25rem;
+    height: 28rem;
+   }
+  
+   .conten-email input {
+    width: 12rem;
+   }
+
+   .content-password input {
+    width: 12rem;
+   }
+
+   .content-confirm input {
+    width: 12rem;
+   }
+
+
+   .button-cuenta {
+    width: 7rem;
+    font-size: 1.5rem;
+    margin-top: 10%;
+   }
+
+   /*Modificaciones Crear cuenta final*/
+  
 }
