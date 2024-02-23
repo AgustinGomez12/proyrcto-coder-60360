@@ -137,6 +137,10 @@ h1 {
 
 /*Main*/
 
+.container-logo-tipo {
+  display: none;
+}
+
 main::-webkit-scrollbar{
   display: none;
 }
@@ -213,7 +217,7 @@ main {
 
 .card {
   
-  min-width: 15rem;
+  min-width: 20rem;
   border: solid 0.2rem;
   background-color: rgba(175, 65, 25, 0.507);
   overflow: auto;
@@ -235,16 +239,31 @@ main {
   border-radius: 10%;
 }
 
-.flechas {
+.flechas1 {
   width: 2.5rem;
 }
 
-.botenes-izq-der {
+.flechas2 {
+  width: 2.5rem;
+}
+
+.botones-izq-der1 {
   display: flex;
   justify-content: space-between;
   position: relative;
   display: none;
 }
+
+.botones-izq-der2 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  display: none;
+}
+
+
+
+
 
 /*Calrrusel tienda*/
 
@@ -292,32 +311,107 @@ main {
 
 /* Estilos aplicados en mobiliarios*/
 
- .grid-container {
+.container-imagen-fondo {
+  
+  display: flex;
+  justify-content: center;
+  background-color: rgba(250, 235, 215, 0.339);
+  padding: 5%;
+  margin-bottom: 1%;
+}
+
+.container-imagen-fondo img {
+  width: 90%;
+  border-radius: 20%;
+  padding: 10%;
+
+}
+
+.container-mobiliarios img {
+  width: 100%;
+}
+
+
+.container-mobiliarios {
   display: grid;
-  grid-template-rows:repeat(18,1fr);
   grid-template-columns: repeat(1,1fr);
+  gap: 20px;
+  padding: 10%;
+}
+
+.item-mobiliarios {
+  background-color: rgba(250, 235, 215, 0.794);
+  border-radius: 10px;
+  border: solid 5px;
+  
+}
+
+.item-mobiliarios:hover {
+   box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
+}
+
+
+
+.item-mobiliarios img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all .5s;
+}
+
+.item-mobiliarios figure {
+  overflow: hidden;
+}
+
+.item-mobiliarios img:hover {
+  transform: scale(1.2);
+}
+
+.info-product {
+  background-color: bisque;
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.info-product button {
+  border: none;
+  background: none;
+  background-color: black;
+  color: aliceblue;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+/* Estilos aplicados en mobiliarios final*/
+
+/*Estilos aplicados en promociones y decoraciones*/
+.grid-container-2 {
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: repeat(1,fr);
   gap: 50px;
   margin-top: 3%;
-  
- }
+}
 
- .grid-item {
+.grid-item-2 {
   padding-top: 11%;
   padding-left: 13%;
   padding-right: 11%;
-  padding-bottom: 11%;
-  
- }
-
- .grid-item-titulo {
-  display: flex;
-  height: 10%;
-  padding-left: 5%;
-  border-bottom: solid whitesmoke;
- }
+  padding-bottom: 11%
+}
 
 
-/* Estilos aplicados en mobiliarios final*/
+
+/*Estilos aplicados en promociones y decoraciones*/
 
 
 /*Estilos aplicados en Crear cuenta e inciar secion*/
@@ -611,23 +705,17 @@ gap: 3%;
 
 
 
-   /*Modificaciones lobiliarios*/
+   /*Modificaciones mobiliarios*/
      
-   .card-title-mobiliario {
-    font-size: 2rem;
+   .container-mobiliarios {
+    padding: 5%;
+    grid-template-columns: repeat(2,1fr);
+
    }
 
-   .card-text {
-    font-size: 2rem;
-   }
 
-   .btn-primary {
-    width: 12rem;
-    height: 3rem;
-    font-size: 1.5rem;
-   }
 
-   /*Modificaciones lobiliarios final*/
+   /*Modificaciones mobiliarios final*/
 
    /*Modificaciones Crear cuenta*/
       
@@ -657,4 +745,186 @@ gap: 3%;
 
    /*Modificaciones Crear cuenta final*/
   
+}
+
+
+
+
+/* Modificacion intermedia entre tablet y pc */
+/*Mobiliario*/
+
+/*Mobiliario*/
+
+/* footer */
+
+@media (min-width:850px) {
+ .bi-telephone-fill {
+  
+  width: 4rem;
+ }
+
+.bi-envelope-at-fill {
+  width: 3.5rem;
+}
+
+.content-mail h5{
+  padding-top: 7%;
+}
+
+.ul-footer {
+  gap: 12%;
+}
+
+
+.ul-footer a {
+  font-size: 2rem;
+}
+
+.seguridad {
+  padding-left: 10%;
+}
+
+.camion {
+  padding-right: 10%;
+}
+
+/* footer final*/
+
+
+
+
+}
+/* Modificacion intermedia entre tablet y pc final */
+
+
+
+
+
+
+
+/* Modificacion pc*/
+
+@media (min-width:1158px) {
+
+/* Modificacion header*/
+.ul-links {
+  gap: 15%;
+  height: 4rem;
+}
+
+.ul-links a {
+  font-size: 1.8rem;
+}
+
+
+/*Modificacion header final*/
+
+/*Modificacion main*/
+
+.container-logo-tipo {
+  display: flex;
+  justify-content: center;
+}
+
+.container-logo-tipo img {
+  width: 40rem;
+  height: 40rem;
+}
+
+.badgraund-color {
+  padding: 10% 10% 10% 10%;
+}
+
+
+.productos-desli {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+
+.tarjeta-grande {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tarjeta {
+  width: 40%;
+  
+}
+
+.footer-guia {
+  padding-top: 8%;
+}
+
+
+.botones-izq-der1 {
+  display: flex;
+  height: 100%;
+}
+
+.flechas1 {
+  position: absolute;
+  top: 17rem;
+  z-index: 1;
+  width: 6rem;
+  background-color: rgba(55, 63, 63, 0.211);
+  border-radius: 10%;
+  margin-left: 1%;
+}
+
+.botones-izq-der2 {
+  display: flex;
+  height: 100%;
+}
+
+.flechas2 {
+  position: absolute;
+  top: 17rem;
+  z-index: 1;
+  width: 6rem;
+  right: 0;
+  background-color: rgba(55, 63, 63, 0.211);
+  border-radius: 10%;
+  margin-right: 1%;
+}
+
+/*Mobiliario*/
+
+.container-mobiliarios {
+  grid-template-columns: repeat(3,1fr);
+}
+
+
+/*Mobiliario*/
+
+/* footer*/
+
+
+.bi-telephone-fill {
+  width: 7rem;
+}
+
+.content-tel h5 {
+ font-size: 2.5rem;
+ padding-top: 3%;
+}
+
+.bi-envelope-at-fill {
+  width: 6rem;
+}
+
+.content-mail h5{
+  font-size: 2.5rem;
+}
+/* footer final*/
+
+
+
+/*Modificacion main final*/
+
+
 }
