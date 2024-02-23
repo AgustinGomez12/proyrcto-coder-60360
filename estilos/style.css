@@ -188,7 +188,7 @@ main {
 
 }
 
-.badgraund-color {
+.container-carrusel-auto {
     margin-top: 10%;
     display: flex;
     background-color: rgba(21, 57, 125, 0.711);
@@ -831,9 +831,16 @@ gap: 3%;
   height: 40rem;
 }
 
-.badgraund-color {
-  padding: 10% 10% 10% 10%;
+
+.container-carrusel-auto {
+  padding: 0;
 }
+
+.carrusel-auto {
+  width: 60%;
+}
+
+
 
 
 .productos-desli {
