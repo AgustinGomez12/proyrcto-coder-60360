@@ -751,9 +751,7 @@ gap: 3%;
 
 
 /* Modificacion intermedia entre tablet y pc */
-/*Mobiliario*/
 
-/*Mobiliario*/
 
 /* footer */
 
@@ -905,6 +903,14 @@ gap: 3%;
   grid-template-columns: repeat(3,1fr);
 }
 
+.container-imagen-fondo {
+  padding: 0;
+}
+
+.container-imagen-fondo img {
+  width: 70%;
+  
+}
 
 /*Mobiliario*/
 
